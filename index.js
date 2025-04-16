@@ -6,12 +6,10 @@ projectManager.addProject({ id: 1, name: 'Projet Alpha', tasks: [] });
 projectManager.addTaskToProject(1, { id: 101, title: 'Configurer le serveur', completed: false });
 
 const project = projectManager.getProjectById(1);
-console.log(project.name);
 
 projectManager.addTaskToProject(1, { id: 102, title: "Déployer l'application", completed: false });  // erreur par rapport au '' j'ai remplacé par ""
 
 const updatedProject = projectManager.getProjectById(1);
-console.log(updatedProject);
 
 const addTask = projectManager.addTaskToProject;
 addTask(1, { id: 103, title: "Tester l'application", completed: false }); // meme erreur remplacé par ""
