@@ -16,6 +16,6 @@ addTask(1, { id: 103, title: "Tester l'application", completed: false }); // mem
 
 projectManager.markTaskAsCompleted(1, 102); // marquer la tâche comme terminée
 
-console.log("------------------------Liste des projets------------------------");
+console.log("\x1b[34m%s\x1b[0m", "------------------------Liste des projets------------------------");
 console.log(projectManager.getProjectById(1));
-console.log("------------------------Fin Liste des projets------------------------");
+console.log("\x1b[34m%s\x1b[0m", "------------------------Fin Liste des projets------------------------");
