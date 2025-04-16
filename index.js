@@ -8,9 +8,6 @@ projectManager.addTaskToProject(1, { id: 101, title: 'Configurer le serveur', co
 const project = projectManager.getProjectById(1);
 console.log(project.name);
 
-project.name = 'Projet Beta';
-project.tasks[0].title = 'Configurer le réseau';
-
 projectManager.addTaskToProject(1, { id: 102, title: "Déployer l'application", completed: false });  // erreur par rapport au '' j'ai remplacé par ""
 
 const updatedProject = projectManager.getProjectById(1);
